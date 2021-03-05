@@ -68,8 +68,8 @@ const mapStateToProps = state => ({
   trips: state.trips,
 });
 
-const mapDispatchToProps = dispatch => ({
-  setStates: newState => dispatch(setMultipleStates(newState)),
+const mapDispatchToProps = (dispatch) => ({
+  setStates: (newState) => dispatch(setMultipleStates(newState)),
 });
 
 export default connect(mapStateToProps, mapDispatchToProps)(App);
