@@ -7,7 +7,14 @@ import MainLayout from './components/layout/MainLayout/MainLayout';
 
 import Home from './components/views/Home/Home';
 import Trips from './components/views/Trips/TripsContainer';
+import Trip from './components/views/Trip/TripContainer';
+
 // TODO - import other views
+import Countries from './components/views/Countries/CountriesContainer';
+import Country from './components/views/Country/CountryContainer';
+
+import Regions from './components/views/Regions/RegionsContainer';
+
 import Info from './components/views/Info/Info';
 import NotFound from './components/views/NotFound/NotFound';
 
@@ -40,7 +47,14 @@ class App extends React.Component {
           <Switch location={location}>
             <Route exact path='/' component={Home} />
             <Route exact path='/trips' component={Trips} />
+            <Route exact path="/trip/:id" component={Trip} />
+
             {/* TODO - add more routes for other views */}
+            <Route excat path='/Countries' component={Countries} />
+            <Route exact path="/country/:id" component={Country} />
+
+            <Route excat path='/Regions' component={Regions}/>
+
             <Route exact path='/info' component={Info} />
             <Route path='*' component={NotFound} />
           </Switch>
