@@ -12,16 +12,12 @@ export const getFilteredTrips = ({trips, filters}) => {
   }
 
   // TODO - filter by duration
+  output = output.filter(trip => (trip.days >= filters.duration.from && trip.days <= filters.duration.to));
+
 
   // TODO - filter by tags
   if (filters.tags.length != 0) {
-    output = output.filter(trip => {
-      for(let tag of trip.tags) {
-        if(filters.tags.indexOf(tag) > -1) {
-          return trip;
-        }
-      }
-    });
+    output = output.filter(trip => filters.tags.every(tag => trip.tags.includes(tag)));
   }
 
 
@@ -32,9 +28,7 @@ export const getFilteredTrips = ({trips, filters}) => {
 
 export const getTripById = ({trips}, tripId) => {
   const filtered = trips.filter((trip) => trip.id == tripId);
-
   // TODO - filter trips by tripId
-  //filtered.filter(trip => trip.tripId == tripId);
 
   console.log('filtering trips by tripId:', tripId, filtered);
   return filtered.length ? filtered[0] : {error: true};
@@ -42,9 +36,7 @@ export const getTripById = ({trips}, tripId) => {
 
 export const getTripsForCountry = ({trips}, countryCode) => {
   const filtered = trips.filter((trip) => trip.country.code == countryCode);
-
   // TODO - filter trips by countryCode
-  //filtered.filter(trips => trips.countryCode == countryCode);
 
   console.log('filtering trips by countryCode:', countryCode, filtered);
   return filtered.length ? filtered : [{error: true}];

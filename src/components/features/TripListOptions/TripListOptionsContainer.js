@@ -4,7 +4,9 @@ import {getAllTags} from '../../../redux/tagsRedux';
 import {getAllFilters,
   changeSearchPhrase,
   addTag,
-  removeTag} from '../../../redux/filtersRedux';
+  removeTag,
+  changeDurationFrom,
+  changeDurationTo} from '../../../redux/filtersRedux';
 
 const mapStateToProps = (state) => ({
   tags: getAllTags(state),
@@ -16,6 +18,8 @@ const mapDispatchToProps = (dispatch) => ({
   // TODO - add more dispatchers for other filters
   addTag: tag => dispatch(addTag(tag)),
   removeTag: tag => dispatch(removeTag(tag)),
+  changeDurationFrom: tag => dispatch(changeDurationFrom(tag)),
+  changeDurationTo: tag => dispatch(changeDurationTo(tag)),
 
 });
 
