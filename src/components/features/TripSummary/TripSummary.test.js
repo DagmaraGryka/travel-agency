@@ -6,7 +6,7 @@ describe ('Component TripSummary', () => {
   it ('should render link to correct address', () => {
     const expectedLink = '/trip/abc';
     const expectedId = 'abc';
-    const component = shallow (<TripSummary id= {expectedId} tags= {[]} /> );
+    const component = shallow (<TripSummary id= {expectedId} tags= {['tag1', 'tag2', 'tag3']} /> );
 
     expect (component.find('.link').prop('to')).toEqual(expectedLink);
   });
