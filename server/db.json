@@ -14,6 +14,94 @@
       "start-date": "2021-03-22T23:00:00.000Z",
       "totalCost": "$81,271",
       "id": 1
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "house",
+      "features": [
+        "kitchen",
+        "pool"
+      ],
+      "adults": 1,
+      "children": 0,
+      "name": "dd",
+      "contact": "dd",
+      "start-date": "2021-03-22T23:00:00.000Z",
+      "totalCost": "$25,174",
+      "id": 2
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "house",
+      "features": [
+        "pool"
+      ],
+      "adults": 2,
+      "children": 1,
+      "name": "dd",
+      "contact": "gg",
+      "start-date": "2021-03-31T22:00:00.000Z",
+      "totalCost": "$133,952",
+      "id": 3
+    },
+    {
+      "car-rental": "suv",
+      "accommodation": "hotel",
+      "features": [
+        "security"
+      ],
+      "adults": 1,
+      "children": 0,
+      "name": "g",
+      "contact": "g",
+      "start-date": "2021-03-15T23:00:00.000Z",
+      "totalCost": "$53,581",
+      "id": 4
+    },
+    {
+      "car-rental": "luxury",
+      "accommodation": "hotel",
+      "features": [
+        "pool",
+        "kitchen"
+      ],
+      "adults": 2,
+      "children": 2,
+      "name": "ddd",
+      "contact": "ff",
+      "start-date": "2021-03-21T23:00:00.000Z",
+      "totalCost": "$159,542",
+      "id": 5
+    },
+    {
+      "car-rental": "",
+      "accommodation": "hotel",
+      "features": [],
+      "adults": 1,
+      "children": 0,
+      "name": "gg",
+      "contact": "gg",
+      "start-date": "",
+      "totalCost": "$139,399",
+      "id": 6
+    },
+    {
+      "car-rental": "full",
+      "accommodation": "hotel",
+      "features": [
+        "kitchen",
+        "pool"
+      ],
+      "adults": 3,
+      "children": 2,
+      "name": "g",
+      "contact": "s",
+      "start-date": "2021-03-21T23:00:00.000Z",
+      "totalCost": "$563,993",
+      "tripId": "5cc1d1014c75f672e46ef6d7",
+      "countryCode": "TLS",
+      "tripName": "Marvelous travel in fantastic Timor-Leste",
+      "id": 7
     }
   ]
 }
