@@ -1,0 +1,19 @@
+{
+  "orders": [
+    {
+      "car-rental": "luxury",
+      "accommodation": "house",
+      "features": [
+        "kitchen",
+        "pool"
+      ],
+      "adults": 1,
+      "children": "1",
+      "name": "ff",
+      "contact": "ff",
+      "start-date": "2021-03-22T23:00:00.000Z",
+      "totalCost": "$81,271",
+      "id": 1
+    }
+  ]
+}
